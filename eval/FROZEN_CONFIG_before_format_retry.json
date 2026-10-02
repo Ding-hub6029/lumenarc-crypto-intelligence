@@ -1,0 +1,43 @@
+{
+  "frozenAtUtc": "2026-10-01T18:46:37Z",
+  "purpose": "Pre-holdout configuration snapshot, prepared after development-only tuning",
+  "corpus": {
+    "originalPdfCount": 30,
+    "parsedPdfPages": 559,
+    "parsedPassages": 1017,
+    "manifestSha256": "275e95c4734b7e105fcd2ac3ab9bcd7548612d333e56b0ca81792499de74423a"
+  },
+  "development": {
+    "cases": 12,
+    "labelSha256": "e3e162e9926b5881eaedb04698acd2e3c9bcca5c57bbd8cca429961bf284a26c",
+    "baselineNumericAccuracy": 0.9167,
+    "finalNumericAccuracy": 1,
+    "notes": "Early exploratory runs are archived. Only development outputs informed numeric-unit normalization and retrieval design."
+  },
+  "holdout": {
+    "cases": 50,
+    "answerable": 40,
+    "noAnswer": 10,
+    "labelSha256": "d92c4deb2ab3d76fcea61e3ee873768762c0375ccf1d43eb48d25b091ad97d57",
+    "evaluatedBeforeFreeze": false,
+    "reportMonthsDisjointFromDevelopment": true
+  },
+  "algorithm": {
+    "chunkTargetCharacters": 1050,
+    "chunkOverlapWords": 32,
+    "retrievedPassagesPerAnswer": 7,
+    "explicitReportMonthSelection": true,
+    "retrievalScore": "bounded lexical count with matched-term coverage and a small development-selected synonym map",
+    "abstentionRule": "no retrieved evidence or missing citation or unsupported numeric claim, with categorical model states",
+    "baseline": "highest-ranked lexical passage with decimal-safe sentence extraction",
+    "model": "gemini-3-flash-preview",
+    "provider": "Manus project AI fallback, since the protected school OpenRouter secret was not confirmed"
+  },
+  "sourceFileSha256": {
+    "server/ai.ts": "0e6c52f62e93824336837435ca283a8463a9de093520f9487fefc2bd0d90744d",
+    "server/search.ts": "c1b17624c85d2989fbdb991f73ce152d817d3f21ab779e693a17712b83530afb",
+    "server/documents.ts": "2a901910d9c22335a7ae3466a3b15a10997f730db07f49d03273f697d15214f8",
+    "scripts/evaluate.ts": "fcbd229d3cf5c76011a5a937b04040900d8525080da02225de4b8b85126af271"
+  },
+  "labelCaveat": "Every evidence quotation is source-text checked against a real PDF page, but no independent human review of all labels has been claimed."
+}

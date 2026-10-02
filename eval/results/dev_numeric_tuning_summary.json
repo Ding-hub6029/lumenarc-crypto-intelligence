@@ -1,0 +1,70 @@
+{
+  "split": "dev",
+  "startedAt": "2026-10-01T18:40:12.434Z",
+  "completedAt": "2026-10-01T18:40:44.379Z",
+  "frozenLabelSha256": "e3e162e9926b5881eaedb04698acd2e3c9bcca5c57bbd8cca429961bf284a26c",
+  "reportCount": 30,
+  "reportMonths": [
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "parsedPages": 559,
+  "parsedPassages": 1017,
+  "devAndHoldoutUseDisjointReportMonths": true,
+  "cases": 12,
+  "provider": "Manus project AI",
+  "model": "gemini-3-flash-preview",
+  "scoring": "Numeric match in answer AND matching numeric evidence in a cited passage from the labeled original PDF. A different report page with the same figure is accepted. Qualitative phrasing and negative-label ambiguity still require manual review.",
+  "baseline": {
+    "counts": {
+      "correct_numeric_and_source": 10,
+      "wrong_or_unverified_numeric": 2
+    },
+    "numberAccuracy": 0.8333,
+    "correctAbstentionRate": null,
+    "wrongfulAbstentionRate": 0,
+    "unsupportedAnswerRate": null,
+    "answeredCases": 12,
+    "noAnswerCases": 0
+  },
+  "final": {
+    "counts": {
+      "wrongful_abstention": 3,
+      "correct_numeric_and_source": 9
+    },
+    "numberAccuracy": 0.75,
+    "correctAbstentionRate": null,
+    "wrongfulAbstentionRate": 0.25,
+    "unsupportedAnswerRate": null,
+    "answeredCases": 12,
+    "noAnswerCases": 0
+  }
+}

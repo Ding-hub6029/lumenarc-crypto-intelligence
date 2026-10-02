@@ -1,0 +1,27 @@
+{"phase":"parsing_source_pdfs","count":30,"split":"holdout","frozenLabelSha256":"d92c4deb2ab3d76fcea61e3ee873768762c0375ccf1d43eb48d25b091ad97d57"}
+{"phase":"parsed","documents":5,"passages":153}
+{"phase":"parsed","documents":10,"passages":328}
+{"phase":"parsed","documents":15,"passages":494}
+{"phase":"parsed","documents":20,"passages":678}
+{"phase":"parsed","documents":25,"passages":841}
+{"phase":"parsed","documents":30,"passages":1017}
+{"phase":"case_complete","case":1,"total":50,"id":"holdout_001","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":2977}
+{"phase":"case_complete","case":2,"total":50,"id":"holdout_002","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":4843}
+{"phase":"case_complete","case":3,"total":50,"id":"holdout_003","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":2537}
+{"phase":"case_complete","case":4,"total":50,"id":"holdout_004","baseline":"wrong_or_unverified_numeric","final":"correct_numeric_and_source","elapsedMs":3207}
+{"phase":"case_complete","case":5,"total":50,"id":"holdout_005","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":2672}
+{"phase":"case_complete","case":6,"total":50,"id":"holdout_006","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":2651}
+{"phase":"case_complete","case":7,"total":50,"id":"holdout_007","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":3022}
+{"phase":"case_complete","case":8,"total":50,"id":"holdout_008","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":3073}
+{"phase":"case_complete","case":9,"total":50,"id":"holdout_009","baseline":"correct_numeric_and_source","final":"correct_numeric_and_source","elapsedMs":3693}
+{"phase":"case_complete","case":10,"total":50,"id":"holdout_010","baseline":"correct_numeric_and_source","final":"execution_error","elapsedMs":12045}
+/home/ubuntu/lumenarc/scripts/evaluate.ts:96
+  if (error) throw new Error(`Evaluation interrupted at ${label.id}: ${error}. No final results were written.`)
+                   ^
+
+
+Error: Evaluation interrupted at holdout_010: The AI did not return valid structured output.. No final results were written.
+    at <anonymous> (/home/ubuntu/lumenarc/scripts/evaluate.ts:96:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v22.13.0

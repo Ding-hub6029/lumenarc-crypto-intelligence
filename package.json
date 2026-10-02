@@ -1,0 +1,40 @@
+{
+  "name": "lumenarc-crypto-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "start": "tsx server/index.ts",
+    "build": "vite build && tsc -p tsconfig.server.json --noEmit",
+    "check": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit",
+    "test": "node --import tsx --test server/*.test.ts",
+    "eval": "node scripts/with_eval_lock.mjs"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "5.1.0",
+    "fast-xml-parser": "5.2.5",
+    "lucide-react": "0.468.0",
+    "mammoth": "1.10.0",
+    "multer": "2.0.2",
+    "pdfjs-dist": "5.4.149",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "recharts": "2.15.4",
+    "ws": "8.18.3"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.3",
+    "@types/multer": "2.0.0",
+    "@types/node": "24.3.0",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "@types/ws": "8.18.1",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "vite": "7.1.4"
+  }
+}

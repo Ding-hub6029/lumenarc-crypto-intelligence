@@ -1,0 +1,19 @@
+{
+  "split": "dev",
+  "cases": 12,
+  "latencyMedianMs": 2628,
+  "latencyP90Ms": 4158,
+  "latencyMeanMs": 3002.6,
+  "modelCallsWithUsage": 12,
+  "reportedPromptTokens": 26627,
+  "reportedCompletionTokens": 2176,
+  "providerUsdCost": null,
+  "costCaveat": "The measured Manus project AI provider did not return a USD price, so this is unknown, not zero.",
+  "supportedAnswersWithCorrectReportCitation": 12,
+  "supportedAnswersWithLabeledPdfPageCitation": 12,
+  "answerableCases": 12,
+  "finalStatusCounts": {
+    "Supported": 12
+  },
+  "scoringCaveat": "A source page citation does not prove the generated answer expresses the correct semantic relationship. Original PDF inspection remains necessary."
+}

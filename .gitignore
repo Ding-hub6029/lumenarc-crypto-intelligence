@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/source_pdfs/
+data/extracted_text/
+data/runtime/
+eval_dev_run.log
+eval_holdout_run.log
+eval/results/.*.lock
+*.part
