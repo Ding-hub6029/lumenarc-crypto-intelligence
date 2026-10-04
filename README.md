@@ -4,6 +4,10 @@ LumenArc is a working bilingual research prototype for an analyst reading crypto
 
 The interface supports English and Simplified Chinese. The source files, evaluation labels, product documentation, and final report are in English.
 
+## Final Project Video
+
+Watch the complete demonstration directly on YouTube: [Final Project Video](https://youtu.be/p8gAnGNghN0?si=KWcy5wya8AUTCqYM)
+
 ## Run locally
 
 Requirements are Node.js 22, pnpm 11.25.0, and internet access for live markets, news, and AI. Install Poppler utilities, specifically `pdfinfo` and `pdftotext`, if you intend to re-download the 30-report corpus. From the project root:
