@@ -6,7 +6,9 @@ The interface supports English and Simplified Chinese. The source files, evaluat
 
 ## Final Project Video
 
-Watch the complete demonstration directly on YouTube: [Final Project Video](https://youtu.be/p8gAnGNghN0?si=KWcy5wya8AUTCqYM)
+Watch the complete demonstration directly on YouTube:
+
+https://youtu.be/p8gAnGNghN0?si=KWcy5wya8AUTCqYM
 
 ## Run locally
 
